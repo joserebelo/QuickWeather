@@ -1,0 +1,1 @@
+* Correção de bug: Corrigido o problema em que o botão de diálogo ficava oculto em alguns dispositivos

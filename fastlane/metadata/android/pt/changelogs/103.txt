@@ -1,0 +1,8 @@
+* Correção de bug: Direção do vento e fases da lua não traduzíveis
+* Atualizações da tradução para alemão via Weblate (Crédito: @ralv3967 e @franconian)
+* Atualizações da tradução para polonês via Weblate (Crédito: @extrm1991)
+* Atualizações da tradução para basco via Weblate (Crédito: Alexander Gabilondo)
+* Atualizações da tradução para espanhol via Weblate (Crédito: gallegonovato)
+* Atualizações da tradução para francês via Weblate (Crédito: Ali Almunguy)
+* Tradução para finlandês via Weblate (Crédito: @Ricky-Tigg)
+* Tradução para tâmil via Weblate (Crédito: @TamilNeram)

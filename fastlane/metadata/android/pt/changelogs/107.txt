@@ -1,0 +1,3 @@
+* Gesto de voltar em tela cheia com animação de progresso
+* Correção de bug: Símbolos do mapa não exibidos
+* Correção de bug: Ícones sobrepostos no seletor de mapas

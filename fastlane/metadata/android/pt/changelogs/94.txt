@@ -1,0 +1,1 @@
+* Correção de bug: Corrigido o problema que impedia a exibição dos dados de temperatura e precipitação das últimas 3 horas

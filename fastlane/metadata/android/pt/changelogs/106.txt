@@ -1,0 +1,1 @@
+* Correção de bug: o Radar sai do modo tela cheia quando o dispositivo é girado

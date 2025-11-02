@@ -1,0 +1,9 @@
+* O subtítulo da previsão foi alterado de "data da última atualização" para "data da previsão" para evitar confusão.
+* Os cartões não serão atualizados se não houver novos dados.
+* As notificações de alerta são descartadas ao abrir o aplicativo (Android 8+).
+* Atualizações da tradução para galego via Weblate (Crédito: @xcomesana)
+* Tradução para tâmil via Weblate (Crédito: @TamilNeram)
+* Atualizações da tradução para chinês via Weblate (Crédito: @EPICRAFT0)
+* Tradução para alemão via Weblate (Crédito: @franconian)
+* Tradução para polonês via Weblate (Crédito: @extrm1991)
+* Tradução para italiano via Weblate (Crédito: @R4ygen)

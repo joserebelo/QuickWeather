@@ -1,0 +1,7 @@
+* Tradução para japonês via Weblate (Crédito: @aki32585)
+* Atualizações da tradução para vietnamita via Weblate (Crédito: @khanhtrang007)
+* Atualizações da tradução para chinês (escrita Han simplificada) via Weblate (Crédito: Alexander Gabilondo)
+* Atualizações da tradução para tâmil via Weblate (Crédito: தமிழ்நேரம்)
+* Atualizações da tradução para português via Weblate (Crédito: @MisterCosta96)
+* Atualizações da tradução para galego via Weblate (Crédito: @xcomesana)
+* Atualizações da tradução para basco via Weblate (Crédito: Alexander Gabilondo)
