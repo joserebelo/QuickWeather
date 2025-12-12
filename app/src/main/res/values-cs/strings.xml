@@ -1,3 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="format_uvi">%.1f UV Index</string>
+    <string name="format_feelslike">Pocitově %s</string>
+    <string name="format_visibility">%s Viditelnost</string>
+    <string name="format_dewpoint">%s Rosný bod</string>
+    <string name="format_humidity">%s Vlhkost</string>
+    <string name="format_alert">Aktivní do %1$s</string>
+    <string name="format_separator">", "</string>
+    <string name="format_precipitation_chance">%1$s šance na %2$s</string>
+    <string name="format_forecast_temp">%1$s / %2$s</string>
+    <string name="format_pressure">%1$d hPa</string>
+    <string name="format_precipitation_start" tools:ignore="PluralsCandidate">%1$s za %2$d min</string>
+    <string name="format_precipitation_end" tools:ignore="PluralsCandidate">%1$s konec za %2$d min</string>
+    <string name="format_forecast_title">%1$s - %2$s</string>
+    <string name="icon_weather_desc">Aktuální počasí</string>
+    <string name="icon_alert_desc">Výstraha</string>
+    <string name="icon_my_location_desc">Moje pozice</string>
+    <string name="forecast_desc">Předpověď</string>
+    <string name="text_current_location">Moje pozice</string>
+    <string name="text_settings">Nastavení</string>
+    <string name="text_locations">Místa</string>
+    <string name="text_no_location">Žádné lokality nevybrány</string>
+    <string name="text_today">Dnes</string>
+    <string name="text_invalid_api_key">Neplatný klíč API</string>
+    <string name="text_invalid_api_key_or_instance">Neplatný API klíč nebo instance</string>
+    <string name="text_invalid_subscription">QuickWeather vyžaduje předplatné \"One Call by Call\"</string>
+    <string name="text_required">Vyžadováno</string>
+    <string name="text_privacy_policy"><a href="https://tylerwilliamson.github.io/QuickWeather/PrivacyPolicy">Ochrana osobních údajů</a></string>
+    <string name="text_accept">Přijmout</string>
+    <string name="text_decline">Odmítnout</string>
+    <string name="text_unknown">Neznámé</string>
+    <string name="text_open">Otevřít</string>
+    <string name="text_check_for_updates">Kontrola aktualizací</string>
+    <string name="text_whats_new">Co je nového?</string>
+    <string name="text_report_a_bug">Nahlásit chybu</string>
+    <string name="text_no_new_version">Používáte nejnovější verzi</string>
+    <string name="text_new_version_available">Nová verze k dispozici!</string>
+    <string name="text_error">Chyba</string>
+    <string name="text_error_new_version">Chyba při kontrole nové verze</string>
+    <string name="text_error_getting_release">Chyba při hledání verze aplikace</string>
+    <string name="onboarding_welcome_text_title">Vítejte</string>
+    <string name="onboarding_welcome_text_paragraph">Díky za instalaci mé aplikace! QuickWeather je bezplatná a open source a dostupná pouze na <a href="https://play.google.com/store/apps/details?id=com.ominous.quickweather">Google Play</a>, <a href="https://f-droid.org/en/packages/com.ominous.quickweather/">F-Droid</a>, a na mém <a href="https://github.com/TylerWilliamson/QuickWeather/releases">GitHubu</a>. Pokud jste nainstalovali tuto aplikaci z jiného zdroje, odinstalujte ji, prosím, a nainstalujte si verzi z Play Store, z F-Droidu nebo z GitHubu.</string>
+    <string name="onboarding_welcome_text_thanks">Zvláštní poděkování</string>
+    <string name="onboarding_welcome_text_thanks_paragraph">QuickWeather může existovat díky:\n• <a href="https://openweathermap.org/">OpenWeatherMap</a> a <a href="https://open-meteo.com/">Open-Meteo</a>\n• <a href="https://github.com/amitjakhu/dripicons-weather">Dripicons - Počasí</a> od Amit Jakhu\n• <a href="https://www.rainviewer.com/">RainViewer</a>\n• <a href="https://github.com/woxblom/DragListView">ListDragView</a> (<a href="https://github.com/woxblom/DragListView/blob/master/LICENSE">licence</a>) od Magnus Woxblom</string>
+    <string name="onboarding_welcome_text_policies">Pravidla</string>
+    <string name="onboarding_welcome_text_policies_paragraph">• QuickWeather je svobodný software licencovaný pod <a href="https://www.gnu.org/licenses/">GNU General Public License</a>\n• Podívejte se na <a href="https://tylerwilliamson.github.io/QuickWeather/PrivacyPolicy">Ochrana osobních údajů</a></string>
+    <string name="onboarding_location_text_title">Místa</string>
+    <string name="onboarding_location_button_other_location">Další místa</string>
+    <string name="onboarding_location_button_current_location">Tato poloha</string>
+    <string name="onboarding_location_button_edit_desc">Editace</string>
+    <string name="onboarding_location_button_clear_desc">Vymazat</string>
+    <string name="onboarding_location_drag_anchor_desc">Táhni ukotvení</string>
+    <string name="onboarding_units_text_title">Jednotky</string>
+    <string name="onboarding_units_text_temperature">Teplota</string>
+    <string name="onboarding_units_text_wind_speed">Rychlost větru</string>
+    <string name="onboarding_units_button_celsius">st. Celsia</string>
+    <string name="onboarding_units_button_fahrenheit">st. Fahrenheita</string>
+    <string name="onboarding_ui_text_title">PŘIHLÁŠENÍ</string>
+    <string name="onboarding_ui_text_theme">Téma</string>
+    <string name="onboarding_ui_text_layout">Rozložení</string>
+    <string name="onboarding_ui_button_light">Světlé</string>
+    <string name="onboarding_ui_button_dark">Tmavé</string>
+    <string name="onboarding_ui_button_auto">Automatické</string>
+    <string name="onboarding_ui_button_layout">Nastavit rozložení</string>
+    <string name="onboarding_notif_text_title">Upozornění</string>
+    <string name="onboarding_notif_text_alerts">Meteorologické\nVýstrahy</string>
+    <string name="onboarding_notif_text_weather">Aktuální\nPočasí</string>
+    <string name="onboarding_button_enabled">Povoleno</string>
+    <string name="onboarding_button_disabled">Zakázáno</string>
+    <string name="onboarding_ext_text_title">Rozšíření</string>
+    <string name="onboarding_provider_text_title">Poskytovatel dat o počasí</string>
+    <string name="onboarding_provider_title_click_action">vyberte poskytovatele dat o počasí</string>
+    <string name="onboarding_provider_owm_edittext_hint">OpenWeatherMap API Klíč</string>
+    <string name="onboarding_provider_owm_onecall_text_welcome">Budete potřebovat klíč API z OpenWeatherMap s předplatným One Call by Call do API One Call 3.0. Pokud žádný nemáte, můžete se zaregistrovat k bezplatnému API klíči <a href="https://home.openweathermap.org/subscriptions/unauth_subscribe/onecall_30/base">tady</a>. Novým klíčům API může trvat až několik hodin, než budou aktivovány a připraveny k použití.</string>
+    <string name="onboarding_provider_openmeteo_apikey_hint">Open-Meteo API klíč (volitelně)</string>
+    <string name="onboarding_provider_openmeteo_instance_hint">Open-Meteo instance (volitelně)</string>
 </resources>
