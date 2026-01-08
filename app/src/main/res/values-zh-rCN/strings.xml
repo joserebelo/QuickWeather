@@ -244,4 +244,6 @@
     <string name="channel_background_work_name">后台任务</string>
     <string name="snackbar_battery_optimization">请禁用电池优化来确保后台任务可以正确运行</string>
     <string name="dialog_batteryoptimization_text">QuickWeather 需要一个后台服务来在后台获取天气信息。此服务可能由于电池优化而被拖延或停止。请为 QuickWeather 禁用电池优化。</string>
+    <string name="channel_background_work_description">加速背景调查所需的通知</string>
+    <string name="dialog_batteryoptimization_title">電池優化</string>
 </resources>
