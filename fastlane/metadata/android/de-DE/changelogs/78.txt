@@ -1,11 +1,10 @@
-* Es ist nun möglich, die Reihenfolge der Wetterkarten zu ändern und/oder sie zu deaktivieren
-* Bugfix: Radarhöhe ändert sich nicht im Querformat
-* Bugfix: Der 8. Tag der täglichen Daten wird angezeigt
-* Bugfix: Filterung von Nicht-Wetterwarnungen
-* Übersetzungen über Weblate aktualisiert
-  * Polnisch (Danke @extrm1991)
-  * Niederländisch (Danke @arjan-s)
-  * Tamazight (Danke @zouhirdehbi)
-  * Baskisch (Danke Alexander Gabilondo)
-  * Hebräisch (Danke עקיבא בקנשטיין)
-  * Russisch (Danke gfbdrgng)
+* Möglichkeit hinzugefügt, die Reihenfolge der Wetterkarten zu ändern und/oder diese zu deaktivieren
+* Fehlerbehebung: Radarhöhe ändert sich im Querformat nicht
+* Fehlerbehebung: Anzeige der Tagesdaten für den achten Tag
+* Fehlerbehebung: Filterung von Nicht-Wetterwarnungen
+* Aktualisierung der polnischen Übersetzung über Weblate (Dank an @extrm1991)
+* Aktualisierung der niederländischen Übersetzung über Weblate (Dank an @arjan-s)
+* Aktualisierung der Tamazight-Übersetzung (Standardmarokkanisch) über Weblate (Dank an @zouhirdehbi)
+* Aktualisierung der baskischen Übersetzung über Weblate (Dank an Alexander Gabilondo)
+* Aktualisierung der hebräischen Übersetzung über Weblate (Dank an עקיבא בקנשטיין)
+* Aktualisierung der russischen Übersetzung über Weblate (Dank an gfbdrgng)
