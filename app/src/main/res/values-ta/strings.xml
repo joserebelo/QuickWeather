@@ -43,7 +43,7 @@
     <string name="advanced_weather_details_expanded">விரிவாக்கப்பட்டது</string>
     <string name="advanced_weather_details_minimized">குறைக்கப்பட்டுள்ளது</string>
     <string name="advanced_translation_lt_instance">லிப்ரெட்ரான்ச்லேட் நிகழ்வு</string>
-    <string name="openmeteo_clearsky">வானத்தை அழிக்கவும்</string>
+    <string name="openmeteo_clearsky">தெளிவான வானம்</string>
     <string name="openmeteo_overcast">மேகமூட்டமான</string>
     <string name="openmeteo_fog">மூடுபனி</string>
     <string name="openmeteo_lightrain">ஒளி தீவிரம் மழை</string>
