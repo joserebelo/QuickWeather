@@ -67,4 +67,22 @@
     <string name="error_connecting_geocoder">Geocoder ကို ဆက်သွယ်ရာ မှားယွင်း</string>
     <string name="error_obtaining_weather">ရာသီဥတု ရယူရတွင် မှားယွင်း</string>
     <string name="error_network">ကွန်ယက် အမှား</string>
+    <string name="text_invalid_subscription">"ဒီ app က စာရင်းသွင်းခြင်းသည်  \"One Call by Call\""</string>
+    <string name="text_privacy_policy">ကိုယ်ရေးကိုယ်တာ မူဝါဒ</string>
+    <string name="onboarding_welcome_text_thanks">အထူးကျေးဇူးတင်</string>
+    <string name="onboarding_welcome_text_policies">မူဝါဒများ</string>
+    <string name="onboarding_location_text_title">နေရာများ</string>
+    <string name="onboarding_units_button_fahrenheit">ဖါရင်ဟိုက်</string>
+    <string name="onboarding_ui_text_title">UI</string>
+    <string name="onboarding_provider_owm_edittext_hint">OpenWeatherMap API Key</string>
+    <string name="onboarding_provider_openmeteo_apikey_hint">Open-Meteo API Key (optional)</string>
+    <string name="onboarding_provider_openmeteo_text_warning">သတိ။ Open-Meteo သည်ယခု ရာသီဆိုး မနှိုးဆော်ပါ။</string>
+    <string name="error_null_response">တုန့်ပြန်မှု ဗလာ ရရှိခဲ့သည်။</string>
+    <string name="error_null_location">နေရာ သတ်မှတ်မရ ဖြစ်နေ</string>
+    <string name="error_no_results">ရလဒ် မရှိပါ</string>
+    <string name="channel_alerts_description">သင့်အစိုးရဌာနမှ ရာသီဆိုး သတိပေး နှိုးဆော်ချက်များ</string>
+    <string name="channel_alerts_name">ရာသီ နှိုးဆော်မှုများ</string>
+    <string name="channel_persistent_description">ယခုရာသီကို ဆက်လျက် ပြသော အသိပေး</string>
+    <string name="channel_persistent_name">ယခုရာသီဥတု</string>
+    <string name="channel_errors_description">ရာသီ ရယူရာ မှားယွင်းမှု</string>
 </resources>
