@@ -1,0 +1,11 @@
+* Unterstützung für Android 16
+* Optimiertes Radar – das aktuellste Radarbild wird nun zuerst geladen
+* Die Sichtweite wird je nach gewählter Einheit in km, mi oder nmi angezeigt
+* Unterstützung für OpenWeatherMap OneCall 2.5 entfernt
+* Finnische Übersetzung via Weblate (Dank an @Ricky-Tigg)
+* Tamilische Übersetzung via Weblate (Dank an @TamilNeram)
+* Aktualisierungen der deutschen Übersetzung via Weblate (Dank an @ralv3967)
+* Aktualisierungen der galicischen Übersetzung via Weblate (Dank an @xcomesana)
+* Aktualisierungen der chinesischen Übersetzung via Weblate (Dank an @EPICRAFT0)
+* Indonesische Übersetzung via Weblate (Dank an @doctorreditshere)
+* Baskische Übersetzung via Weblate (Dank an Alexander Gabilondo)

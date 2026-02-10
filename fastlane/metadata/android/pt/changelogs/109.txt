@@ -1,0 +1,9 @@
+* Adicionado suporte para o geocodificador Open-Meteo caso nenhum geocodificador esteja presente no dispositivo
+* Adicionadas opções para desativar a otimização de bateria
+* Correção de bug: O mapa da caixa de diálogo às vezes desaparecia
+* Correção de bug: Cores incorretas após alterações no modo noturno
+* Correção de bug: Os dados meteorológicos às vezes desapareciam após alterações no modo noturno
+* Atualizações da tradução para tâmil via Weblate (Crédito: @TamilNeram)
+* Atualizações da tradução para alemão via Weblate (Crédito: @amarradi)
+* Atualizações da tradução para galego via Weblate (Crédito: @xcomesana)
+* Atualizações da tradução para basco via Weblate (Crédito: Alexander Gabilondo)

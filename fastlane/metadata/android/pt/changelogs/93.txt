@@ -1,0 +1,5 @@
+* Adicionado cache de clima em arquivo
+* Correção de bug: Corrigido o cache de clima na memória
+* Correção de bug: Corrigido o problema de abertura repetida das caixas de diálogo de alertas meteorológicos
+* Atualizações da tradução para português via Weblate (Crédito: @MisterCosta96)
+* Atualizações da tradução para espanhol via Weblate (Crédito: gallegonovato)

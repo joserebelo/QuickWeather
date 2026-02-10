@@ -1,0 +1,6 @@
+* Adicionada tradução de alertas meteorológicos via LibreTranslate nas configurações avançadas
+* Correção de bug: alertas de teste de tsunami ocultos
+* Correção de bug: corrigidas as descrições do ponto de orvalho e da velocidade do vento na previsão do tempo
+* Atualizações da tradução para espanhol via Weblate (Créditos: @franciscot e gallegonovato)
+* Atualizações da tradução para francês via Weblate (Créditos: Said Senoussi)
+* Atualizações da tradução para alemão via Weblate (Créditos: @amarradi e @franconian)

@@ -1,0 +1,3 @@
+* Correção de bug: Corrigido o gráfico que não exibia dados de temperatura e precipitação de 3 horas
+* Tradução para finlandês via Weblate (Crédito: @huuhaa)
+* Atualizações da tradução para espanhol via Weblate (Crédito: gallegonovato)
