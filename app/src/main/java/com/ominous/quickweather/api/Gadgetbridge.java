@@ -21,6 +21,8 @@ package com.ominous.quickweather.api;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.content.pm.ResolveInfo;
 
 import com.ominous.quickweather.data.WeatherDatabase;
 import com.ominous.quickweather.data.CurrentWeather;
@@ -31,6 +33,8 @@ import com.ominous.quickweather.util.WeatherUtils;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.util.List;
 
 //TODO airQuality
 public class Gadgetbridge {
@@ -126,10 +130,26 @@ public class Gadgetbridge {
 
             weatherJson.put("hourly", hourlyForecasts);
 
-            context.sendBroadcast(
-                    new Intent(ACTION_GENERIC_WEATHER)
-                            .putExtra(EXTRA_WEATHER_JSON, weatherJson.toString())
-                            .setFlags(Intent.FLAG_INCLUDE_STOPPED_PACKAGES));
+            final List<ResolveInfo> receivers = context.getPackageManager().queryBroadcastReceivers(
+                    new Intent(ACTION_GENERIC_WEATHER),
+                    PackageManager.GET_RESOLVED_FILTER
+            );
+            if (!receivers.isEmpty()) {
+                for (ResolveInfo receiver : receivers) {
+                    context.sendBroadcast(
+                            new Intent(ACTION_GENERIC_WEATHER)
+                                    .setPackage(receiver.activityInfo.applicationInfo.packageName)
+                                    .putExtra(EXTRA_WEATHER_JSON, weatherJson.toString())
+                                    .setFlags(Intent.FLAG_INCLUDE_STOPPED_PACKAGES));
+                }
+            } else {
+                // For backwards compatibility, if no receivers are found, broadcast the implicit intent
+                context.sendBroadcast(
+                        new Intent(ACTION_GENERIC_WEATHER)
+                                .putExtra(EXTRA_WEATHER_JSON, weatherJson.toString())
+                                .setFlags(Intent.FLAG_INCLUDE_STOPPED_PACKAGES));
+            }
+
         } catch (JSONException e) {
             //
         }
