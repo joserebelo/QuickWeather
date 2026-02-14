@@ -1,0 +1,13 @@
+* RainViewer (radar provider) has removed support for radar themes, and added rate limits
+* Removed non-functional radar themes
+* Added retry due to RainViewer rate limits
+* Added optimization for radar tiles without coverage
+* Added support for compressed GadgetBridge data (Credit @ThomasKuehne)
+* Added support for GadgetBridge 0.89.0 (Credit @joserebelo)
+* Ukrainian Translation via Weblate (Credit @Uaskiff)
+* Czech Translation via Weblate (Credit Ivan Kološ)
+* Chinese (Simplified Han script) Translation Updates via Weblate (Credit A. Wang)
+* German Translation Updates via Weblate (Credit @ralv65)
+* Tamil Translation Updates via Weblate (Credit @TamilNeram)
+* Burmese Translation via Weblate (Credit Zart Like)
+* Portugese Translation Updates via Weblate (Credit @n2778370)

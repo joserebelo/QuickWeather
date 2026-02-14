@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <!--
-  ~   Copyright 2019 - 2025 Tyler Williamson
+  ~   Copyright 2019 - 2026 Tyler Williamson
   ~
   ~   This file is part of QuickWeather.
   ~
@@ -16,7 +17,9 @@
   ~
   ~   You should have received a copy of the GNU General Public License
   ~   along with QuickWeather.  If not, see <https://www.gnu.org/licenses/>.
-  --><resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ExtraTranslation,MissingTranslation" tools:locale="en">
+  -->
+
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ExtraTranslation,MissingTranslation" tools:locale="en">
     <string name="format_uvi">%.1f UV-Index</string>
     <string name="format_dewpoint">%s Taupunkt</string>
     <string name="format_humidity">%s Luftfeuchtigkeit</string>

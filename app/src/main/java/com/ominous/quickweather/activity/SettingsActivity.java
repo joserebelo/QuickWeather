@@ -1,5 +1,5 @@
 /*
- *   Copyright 2019 - 2025 Tyler Williamson
+ *   Copyright 2019 - 2026 Tyler Williamson
  *
  *   This file is part of QuickWeather.
  *
@@ -1443,7 +1443,6 @@ public class SettingsActivity extends OnboardingActivity2 implements ILifecycleA
         private RadarQuality radarQuality = null;
         private Enabled expandedDetails = null;
         private MaterialButton buttonLanguage;
-        private MaterialButton buttonRadarTheme;
         private MaterialButton buttonTranslation;
 
         private boolean shouldReopenAdvancedMenu = false;
@@ -1460,7 +1459,6 @@ public class SettingsActivity extends OnboardingActivity2 implements ILifecycleA
         @Override
         public void onCreateView(View v) {
             buttonLanguage = v.findViewById(R.id.button_app_language);
-            buttonRadarTheme = v.findViewById(R.id.button_radar_theme);
             buttonTranslation = v.findViewById(R.id.button_translation_settings);
         }
 
@@ -1494,7 +1492,6 @@ public class SettingsActivity extends OnboardingActivity2 implements ILifecycleA
             Locale currentLocale = llc.isEmpty() ? null : llc.get(0);
 
             setLanguageButtonText(currentLocale);
-            setRadarThemeButtonText(weatherPreferences.getRadarTheme());
 
             buttonLanguage.setOnClickListener(view ->
                     dialogHelper.showLocaleDialog(
@@ -1509,14 +1506,6 @@ public class SettingsActivity extends OnboardingActivity2 implements ILifecycleA
                                         locale == null ?
                                                 LocaleListCompat.getEmptyLocaleList() :
                                                 LocaleListCompat.create(locale));
-                            }));
-
-            buttonRadarTheme.setOnClickListener(view ->
-                    dialogHelper.showRadarThemeDialog(
-                            weatherPreferences.getRadarTheme(),
-                            radarTheme -> {
-                                weatherPreferences.setRadarTheme(radarTheme);
-                                setRadarThemeButtonText(radarTheme);
                             }));
 
             buttonTranslation.setOnClickListener(view ->
@@ -1568,18 +1557,6 @@ public class SettingsActivity extends OnboardingActivity2 implements ILifecycleA
         @Override
         public boolean canAdvanceToNextPage() {
             return false;
-        }
-
-        private void setRadarThemeButtonText(RadarTheme radarTheme) {
-            RadarTheme[] themes = RadarTheme.values();
-            String[] theme_texts = getContext().getResources().getStringArray(R.array.text_radar_themes);
-
-            for (int i = 0, l = themes.length; i < l; i++) {
-                if (radarTheme == themes[i]) {
-                    buttonRadarTheme.setText(theme_texts[i]);
-                    break;
-                }
-            }
         }
 
         private void setLanguageButtonText(Locale locale) {

@@ -1,5 +1,5 @@
 /*
- *   Copyright 2019 - 2025 Tyler Williamson
+ *   Copyright 2019 - 2026 Tyler Williamson
  *
  *   This file is part of QuickWeather.
  *
@@ -115,7 +115,7 @@ public class WeatherPreferences {
     }
 
     public RadarTheme getRadarTheme() {
-        return IPreferenceEnum.from(getPreference(PREFERENCE_RADARTHEME), RadarTheme.UNIVERSAL_BLUE);
+        return RadarTheme.UNIVERSAL_BLUE;
     }
 
     public void setRadarTheme(@NonNull RadarTheme radarTheme) {

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <!--
-  ~   Copyright 2019 - 2025 Tyler Williamson
+  ~   Copyright 2019 - 2026 Tyler Williamson
   ~
   ~   This file is part of QuickWeather.
   ~
@@ -16,7 +17,9 @@
   ~
   ~   You should have received a copy of the GNU General Public License
   ~   along with QuickWeather.  If not, see <https://www.gnu.org/licenses/>.
-  --><resources xmlns:tools="http://schemas.android.com/tools">
+  -->
+
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="format_uvi">%.1fIndeks UV</string>
     <string name="text_privacy_policy"><a href="https://tylerwilliamson.github.io/QuickWeather/PrivacyPolicy">Kebijakan Privasi</a></string>
     <string name="onboarding_provider_openmeteo_text_warning">Peringatan: Open-Meteo saat ini tidak memberikan peringatan cuaca. Harap hati -hati.</string>

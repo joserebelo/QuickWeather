@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <!--
-  ~   Copyright 2019 - 2025 Tyler Williamson
+  ~   Copyright 2019 - 2026 Tyler Williamson
   ~
   ~   This file is part of QuickWeather.
   ~
@@ -16,7 +17,9 @@
   ~
   ~   You should have received a copy of the GNU General Public License
   ~   along with QuickWeather.  If not, see <https://www.gnu.org/licenses/>.
-  --><resources xmlns:tools="http://schemas.android.com/tools">
+  -->
+
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="onboarding_ui_button_auto">Auto</string>
     <string name="format_separator">", "</string>
     <string name="format_forecast_desc">Previsioni per %1$s: %2$s, Temperatura Massima %3$s, e Temperatura Minima %4$s. %5$s. vento %6$s. umidità %7$s. pressione %8$s. punto di rugiada %9$s. %10$s.</string>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <!--
-  ~   Copyright 2019 - 2025 Tyler Williamson
+  ~   Copyright 2019 - 2026 Tyler Williamson
   ~
   ~   This file is part of QuickWeather.
   ~
@@ -16,7 +17,9 @@
   ~
   ~   You should have received a copy of the GNU General Public License
   ~   along with QuickWeather.  If not, see <https://www.gnu.org/licenses/>.
-  --><resources xmlns:tools="http://schemas.android.com/tools">
+  -->
+
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="onboarding_welcome_text_paragraph">Obrigado por instalar a minha aplicação! O QuickWeather é grátis, livre e de código aberto e está disponível apenas no <a href="https://play.google.com/store/apps/details?id=com.ominous.quickweather">Google Play</a>, <a href="https://f-droid.org/en/packages/com.ominous.quickweather/">F-Droid</a>, e na minha página do <a href="https://github.com/TylerWilliamson/QuickWeather/releases">GitHub</a>. Se instalou esta aplicação de qualquer outra fonte, por favor, desinstale-a e obtenha-a da Play Store, F-Droid, ou do GitHub.</string>
     <string name="onboarding_welcome_text_thanks_paragraph">O QuickWeather foi possibilitado por:
 \n • <a href="https://openweathermap.org/">OpenWeatherMap</a> e <a href="https://open-meteo.com/">Open-Meteo</a>

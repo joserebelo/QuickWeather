@@ -1,5 +1,5 @@
 /*
- *   Copyright 2019 - 2025 Tyler Williamson
+ *   Copyright 2019 - 2026 Tyler Williamson
  *
  *   This file is part of QuickWeather.
  *
@@ -29,6 +29,7 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.util.Pair;
@@ -90,6 +91,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -109,8 +111,10 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicReference;
 
 import okhttp3.Interceptor;
+import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
 import okhttp3.Response;
+import okhttp3.ResponseBody;
 
 public class WeatherMapView extends ConstraintLayout implements View.OnClickListener {
     private final static int ANIMATION_DURATION = 500;
@@ -947,10 +951,9 @@ public class WeatherMapView extends ConstraintLayout implements View.OnClickList
         radarSlider.setLabelBehavior(visible | isPlaying ? LabelFormatter.LABEL_VISIBLE : LabelFormatter.LABEL_FLOATING);
     }
 
-    // TODO Handle failed calls to RainViewer and retry them
     private void setHTTPOptions() {
         OkHttpClient client = new OkHttpClient.Builder()
-                .addNetworkInterceptor(new CounterInterceptor())
+                .addInterceptor(new CounterInterceptor())
                 .build();
 
         HttpRequestUtil.setOkHttpClient(client);
@@ -960,6 +963,17 @@ public class WeatherMapView extends ConstraintLayout implements View.OnClickList
     private class CounterInterceptor implements Interceptor {
         private final AtomicInteger ACTIVE_REQUESTS = new AtomicInteger(0);
         private final AtomicBoolean IS_LOADING = new AtomicBoolean(false);
+
+        private final byte[] DEFAULT_IMAGE;
+
+        private CounterInterceptor() {
+            Bitmap b = Bitmap.createBitmap(1,1, Bitmap.Config.ARGB_8888);
+
+            ByteArrayOutputStream stream = new ByteArrayOutputStream();
+            b.compress(Bitmap.CompressFormat.PNG, 100, stream);
+            DEFAULT_IMAGE = stream.toByteArray();
+            b.recycle();
+        }
 
         private void updateLoadingIndicator(int requestCount) {
             boolean isLoading = IS_LOADING.get();
@@ -977,7 +991,29 @@ public class WeatherMapView extends ConstraintLayout implements View.OnClickList
         public Response intercept(@NonNull Chain chain) throws IOException {
             updateLoadingIndicator(ACTIVE_REQUESTS.incrementAndGet());
 
+            int tries = 1;
+
             try {
+                while (tries < 6) {
+                    Response r = chain.proceed(chain.request());
+
+                    switch (r.code()) {
+                        case 403:
+                            return r.newBuilder()
+                                    .code(200)
+                                    .header("Cache-Control", "max-age=10800")
+                                    .body(ResponseBody.create(DEFAULT_IMAGE, MediaType.get("image/png")))
+                                    .build();
+                        case 429:
+                            r.close();
+                            SystemClock.sleep(10000);
+                            tries++;
+                            continue;
+                        default:
+                            return r;
+                    }
+                }
+
                 return chain.proceed(chain.request());
             } finally {
                 updateLoadingIndicator(ACTIVE_REQUESTS.decrementAndGet());
