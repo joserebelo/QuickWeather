@@ -104,4 +104,10 @@
                 android:value="true" />
         </service>
     </application>
+
+    <queries>
+        <intent>
+            <action android:name="nodomain.freeyourgadget.gadgetbridge.ACTION_GENERIC_WEATHER" />
+        </intent>
+    </queries>
 </manifest>
