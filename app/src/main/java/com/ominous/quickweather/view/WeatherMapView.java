@@ -285,6 +285,8 @@ public class WeatherMapView extends ConstraintLayout implements View.OnClickList
             uiSettings.setAttributionEnabled(false);
             uiSettings.setLogoEnabled(false);
 
+            mapLibreMap.setMaxZoomPreference(6.4);
+
             weatherMapAnimationListener = new WeatherMapAnimationListener(mapLibreMap);
 
             mapLibreMap.addOnRotateListener(weatherMapAnimationListener);
@@ -1103,7 +1105,7 @@ public class WeatherMapView extends ConstraintLayout implements View.OnClickList
                                     .target(new LatLng(
                                             currentLatitude,
                                             currentLongitude))
-                                    .zoom(7)
+                                    .zoom(6.4)
                                     .build()
                     ),
                     ANIMATION_DURATION);

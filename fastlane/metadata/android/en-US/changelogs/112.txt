@@ -1,0 +1,1 @@
+* RainViewer (radar provider) added a maximum zoom level
